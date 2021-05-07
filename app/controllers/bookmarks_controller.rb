@@ -5,7 +5,6 @@ class BookmarksController < ApplicationController
     end 
     def destroy
       @bookmark.destroy
-      redirect_to bookmarks_path
     end 
     def create
         @list = List.find(params[:list_id])

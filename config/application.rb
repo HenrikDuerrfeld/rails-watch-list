@@ -33,5 +33,6 @@ module RailsWatchList
     config.generators.system_tests = nil
     config.time_zone = 'Europe/Paris'
     config.active_record.default_timezone = :local
+    config.active_record.time_zone_aware_attributes = false
   end
 end

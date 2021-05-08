@@ -9,7 +9,7 @@ class ListsController < ApplicationController
         @list = List.find(params[:id])
     end 
     def create
-        @list = List.new(params.require(:list).permit(:name))
+        @list = List.new(params.require(:list).permit(:name, :photo))
         @list.save
         if @list.save
           redirect_to list_path(@list)
